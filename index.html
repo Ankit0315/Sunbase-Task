@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Designer</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Form Designer</h1>
+        <button onclick="saveForm()" class="save">Save</button>
+    </header>
+
+    <div class="container">
+        <section class="components">
+            <div class="btn-wrapper">
+                <div onclick="addInput()" class="input">Input +</div>
+                <div onclick="addSelect()" class="input">Select +</div>
+                <div onclick="addTextarea()" class="input">Textarea +</div>
+            </div>
+        </section>
+
+        <form class="form-outer">
+            <section class="form-wrapper">
+                <div id="form-container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </section>
+        </form>
+    </div>
+
+</body>
+
+</html>
